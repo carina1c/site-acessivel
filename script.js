@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const alternaContraste = this.getElementById('alterna-contraste')
 
     botaoDeAcessibilidade.addEventListener('click', function (){
-botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-opcoesDeAcessibilidade.classList.toggle(apresenta-lista);
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
     });
 
     let tamanhoAtualFonte = 1;
@@ -23,4 +23,7 @@ opcoesDeAcessibilidade.classList.toggle(apresenta-lista);
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
 
     });
+    alternaContraste.addEventListener('click', function(){
+        document.body.classList.toggle('alto-contraste')
+    })
 });
