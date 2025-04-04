@@ -27,3 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
         document.body.classList.toggle('alto-contraste')
     })
 });
+
+SrcollReveal().reveal('#inicio',{delay:500});
+SrcollReveal().reveal('#tropicalia',{delay:500});
+SrcollReveal().reveal('#galeria',{delay:500});
+SrcollReveal().reveal('#contato',{delay:500});
